@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header><!-- for heading --> 
+        <h1>Stop Watch <i class="fa fa-thin fa-stopwatch"></i></h1>
+    </header>
+    
+    <div class="container">
+        <button id="circle" class="clock">
+            <div class="circle"> <!-- for watch -->
+                <div class="myAnimation" id="robot-div"> <!-- for Animation -->
+                    <div id="robot">
+                        <img id="robot-img" src="img/people-run.gif" alt="runner">
+                    </div>
+                </div>
+                <p id="time" class="time">00 : 00 : 00</p>
+            </div>
+        </button>
+        <div class="buttons">
+            <div class="play-button" id="play-button">
+                <button class="btn rounded" id="play"><i class="fa fa-duotone fa-play"></i><span class="tooltip">Play</span></button>
+                <button class="btn rounded" id="pause"><i class="fa fa-duotone fa-pause"></i><span class="tooltip">Pause</span></button>
+            </div>
+            <div class="reset-button">
+                <button class="btn rounded" id="reset" ><i class="fa fa-duotone fa-stop"></i><span class="tooltip">Reset</span></button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
